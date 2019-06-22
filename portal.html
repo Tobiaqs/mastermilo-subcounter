@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Mastermilo SubViewer </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .header {
+                font-size: 30px;
+            }
+
+            form > * {
+                margin: 10px 0;
+            }
+
+            .instruction-1 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Mastermilo SubViewer</div>
+        <form method="GET" action="/save">
+            <div class="instruction-1">Hoi Emiel en Dirk! Als je hier even jullie Wi-Fi gegevens invullen dan kan de SubViewer live laten zien hoeveel abonnees jullie hebben! Je kan ook een hotspot van een telefoon gebruiken.</div>
+            <input type="text" name="ssid" placeholder="Wi-Fi naam">
+            <input type="text" name="passphrase" placeholder="Wachtwoord">
+            <div class="instruction-2">
+                Let op, allebei de velden zijn hoofdletter gevoelig.<br>
+            </div>
+            <input type="submit" name="submit" value="Sla het op enzo">
+        </form>
+    </body>
+</html>
